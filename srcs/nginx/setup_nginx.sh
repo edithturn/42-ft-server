@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "----------------------- Start Nginx ---------------------------- \n"
+echo ""
+echo "----------------------- Start Nginx ----------------------------"
 
 SITE_AVAILABLE="/etc/nginx/sites-available"
 SITE_ENABLED="/etc/nginx/sites-enabled"
@@ -11,4 +12,8 @@ cp $DIR/nginx.conf $SITE_AVAILABLE/localhost
 ln -s $SITE_AVAILABLE/localhost $SITE_ENABLED/localhost
 rm -rf $SITE_ENABLED/default
 
-echo "----------------------- Finish Nginx ---------------------------- \n"
+
+echo "Checking is nginx is working fine"
+nginx -t
+
+service nginx restart

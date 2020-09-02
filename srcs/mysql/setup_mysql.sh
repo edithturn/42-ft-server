@@ -1,14 +1,13 @@
 #!/bin/bash
 
-echo "----------------------- Start Mysql ----------------------------\t"
+echo ""
+echo "----------------------- Start Mysql ----------------------------"
 service mysql start
 
 echo "Creating database"
 mysql --user=root --password=toor << EOF
-CREATE DATABASE db_wordpress;
-CREATE USER 'admin' identified by 'admin';
-GRANT USAGE ON db_wordpress.* TO 'admin'@'localhost' identified by 'admin';
-GRANT ALL PRIVILEGES ON db_wordpress.* TO 'admin'@'localhost' identified by 'admin';
+CREATE DATABASE db_wordpress CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+GRANT ALL ON db_wordpress.* TO admin @'localhost' IDENTIFIED BY 'admin';
 FLUSH PRIVILEGES;
 EOF
 
@@ -20,5 +19,3 @@ INSERT INTO students (firstname) VALUES ("Zakaria");
 INSERT INTO students (firstname) VALUES ("Juanito");
 INSERT INTO students (firstname) VALUES ("Elian");
 EOF
-
-echo "----------------------- Finish Mysql ----------------------------\t"

@@ -6,12 +6,12 @@
 
 ### Images
 ```bash
-docker build -it ft_server:1.0 .
+docker build -t ft_server .
 ```
 ### Container
 ```bash
 # Run container
-docker run --name ft_nginx -it  -p 80:80 -p 443:4433 ft_server:1.0
+docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server
 
 # See running containers
 docker ps
