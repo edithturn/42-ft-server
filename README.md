@@ -1,5 +1,5 @@
 # ft_server  :whale2: :whale2:
-Set up a web server with Nginx, phpMyAdmin, MySQL, WordPress and SSL.
+Set up a web server with Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker.
 
 
 ##  General Process :bell:
@@ -49,13 +49,13 @@ docker stop ft_nginx
 
 ### Resources :jack_o_lantern:
 
-[Create ssl keys] (https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
+[Create ssl keys](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/)
 
-[Confgure nginx for ssl] (https://phoenixnap.com/kb/install-ssl-certificate-nginx)
+[Confgure nginx for ssl](https://phoenixnap.com/kb/install-ssl-certificate-nginx)
 
-[ Owner of wordpress] (https://emiliocastro.com.mx/fixing-wordpress-a-mini-tutorial/)
+[ Owner of wordpress](https://emiliocastro.com.mx/fixing-wordpress-a-mini-tutorial/)
 
-[Configure wordpress]https://wordpress.org/support/article/editing-wp-config-php/
+[Configure wordpress](https://wordpress.org/support/article/editing-wp-config-php/)
 
 
 ### ft_server pdf  new curriculum
