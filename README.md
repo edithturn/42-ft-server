@@ -1,16 +1,15 @@
 # ft_server  :whale2: :whale2:
-Set up a web server with Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker.
+Set up a web server with **Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker**
 
 # How to use?
-Run the script to build and run the container, the container will keep running because it calls bash, then after running the script you will be inside the container:
+Run the script 
 ```bash
 ./src/build_run.sh
 ```
-
-# Explanation
+## Explanation
 **Ports**
-Port **80** is where nginx is listening
-Port **443** is used for secure web browser communication
+- Port **80** is where nginx is listening
+- Port **443** is used for secure web browser communication
 ```bash
 # Build the image based on our Dockerfile
 docker build -t ft_server .
@@ -22,20 +21,25 @@ docker rm -f $(docker ps -qa)
 docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server
 ```
 
-##  General Process :bell:
+##  General :bell:
+**Docker** is a standard to build and share containerized apps.
 ![General Flow](img/general.png)
 
 
-## Nginx Autoindex in "on"
+### Nginx Autoindex in "on"
+NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. (For ft_server we are using it as a web serving)
 ![Autoindex ON](img/autoindex_on.png)
 
-## PhpMyAdmin
+### PhpMyAdmin
+phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web.
 ![PhpMyAdmin ON](img/phpadmin.png)
 
-## Wordpress
+### Wordpress
+WordPress is the simplest, most popular way to create your own website or blog.
 ![Wodrpress](img/wordpress.png)
 
-## MySql database
+### MySql database
+MySQL is a relational database management system based on SQL – Structured Query Language
 ![MySql database](img/database_mysql.png)
 
 
