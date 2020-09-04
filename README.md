@@ -5,7 +5,7 @@ Set up a web server with **Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker
 **Docker** is a standard to build and share containerized apps.
 ![General Flow](img/general.png)
 
-# How to use?
+## How to use?
 Run the script 
 ```bash
 ./src/build_run.sh
@@ -25,19 +25,19 @@ docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server
 - Port **80** is where nginx is listening
 - Port **443** is used for secure web browser communication
 
-### Nginx Autoindex in "on"
+### Nginx Autoindex in "on"	busstop:
 NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. (For ft_server we are using it as a web serving)
 ![Autoindex ON](img/autoindex_on.png)
 
-### PhpMyAdmin
+### PhpMyAdmin	:busstop:
 phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web.
 ![PhpMyAdmin ON](img/phpadmin.png)
 
-### Wordpress
+### Wordpress	:busstop:
 WordPress is the simplest, most popular way to create your own website or blog.
 ![Wodrpress](img/wordpress.png)
 
-### MySql database
+### MySql database	:busstop:
 MySQL is a relational database management system based on SQL – Structured Query Language
 ![MySql database](img/database_mysql.png)
 
@@ -51,11 +51,16 @@ docker build -t ft_server .
 ### Container
 
 ```bash
-docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server 			# Run container
-docker ps			# Show running containers
-docker ps -a 		# Show dead containers
-docker exec -it ft_nginx /bin/bash			# Open the running container
-docker stop ft_nginx			# Stop the running container
+# Run container
+docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server 
+ # Show running containers
+docker ps
+# Show dead containers
+docker ps -a 
+# Open the running container
+docker exec -it ft_nginx /bin/bash
+# Stop the running container
+docker stop ft_nginx
 ```
 
 ### Resources :jack_o_lantern:
