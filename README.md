@@ -1,6 +1,26 @@
 # ft_server  :whale2: :whale2:
 Set up a web server with Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker.
 
+# How to use?
+Run the script to build and run the container, the container will keep running because it calls bash, then after running the script you will be inside the container:
+```bash
+./src/build_run.sh
+```
+
+# Explanation
+**Ports**
+Port **80** is where nginx is listening
+Port **443** is used for secure web browser communication
+```bash
+# Build the image based on our Dockerfile
+docker build -t ft_server .
+
+# Clean other our old containers
+docker rm -f $(docker ps -qa)
+
+# Create the container who execute a script on CMMD => setup_application.sh
+docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server
+```
 
 ##  General Process :bell:
 ![General Flow](img/general.png)
