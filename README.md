@@ -1,5 +1,5 @@
 # ft_server  :whale2: :whale2:
-Set up a web server with **Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker**
+This project consists of set up a web server with **Nginx, phpMyAdmin, MySQL, WordPress and SSL on Docker**
 
 ##  General :bell:
 **Docker** is a standard to build and share containerized apps.
