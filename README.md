@@ -71,6 +71,9 @@ docker stop ft_nginx
 - [Configure wordpress](https://wordpress.org/support/article/editing-wp-config-php/)
 
 
+### Graded by Moulinette
+![Graded by Moulinette](img/moulinete.png)
+
 ### ft_server pdf  new curriculum
 [Download from HERE](https://drive.google.com/file/d/1OlPM7qewRFtc-hkJ7k1q1FJ4vTv1xkWT/view?usp=sharing)
 
