@@ -25,7 +25,7 @@ docker run --name ft_server -it  -p 80:80 -p 443:443 ft_server
 - Port **80** is where nginx is listening
 - Port **443** is used for secure web browser communication
 
-### Nginx Autoindex in "on"	busstop:
+### Nginx Autoindex in "on"	:busstop:
 NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. (For ft_server we are using it as a web serving)
 ![Autoindex ON](img/autoindex_on.png)
 
